@@ -299,7 +299,7 @@ html {
 
 .features {
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0px;
   border-color: var(--white-color);
 }
 
@@ -560,6 +560,7 @@ footer .flex-wrapper {
 
 .footer__link {
   display: inline-block;
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

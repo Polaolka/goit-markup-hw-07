@@ -1,6 +1,6 @@
 
 .features {
-    @include section;
+    @include section($pb: 0px);
 
     border-color: var(--white-color);
 }
