@@ -1,0 +1,21 @@
+.hero {
+    @include section(200px, 200px);
+
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: var(--dark-bg-color);
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/hero_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero__title {
+    margin-bottom: 30px;
+
+    @include fonts($fw: 900, $fs: 44px, $lh: 1.4, $lsp: 0.06em, $color: var(--white-color));
+
+    text-transform: uppercase;
+
+}

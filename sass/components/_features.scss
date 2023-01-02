@@ -1,0 +1,46 @@
+
+.features {
+    @include section;
+
+    border-color: var(--white-color);
+}
+
+.features__list {
+    display: flex;
+    align-items: flex-start;
+}
+
+.features__li-item {
+    width: calc((100% - 90px)/4);
+    margin-right: 30px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.features__items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: var(--light-bg-color);
+    border-radius: 4px;
+}
+
+.features__icon {
+    display: inline-block;
+    fill: currentcolor;
+}
+
+.features__title {
+    margin-bottom: 10px;
+
+    @include fonts($fw: 700, $lh: 1.14, $color: var(--title-text-color));
+    text-transform: uppercase;
+}
+
+.features__txt {
+    line-height: 2;
+}
